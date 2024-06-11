@@ -99,14 +99,16 @@ nav i {
 }
 
 nav img {
-  width: 60%;
-  height: 60%;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  top: 10px;
 }
 
 .burgerMenuOpen,
 .burgerMenuClose {
   display: none;
-  color: white;
+  color: tomato;
 }
 
 nav ul li ul.dropdown li {
@@ -129,13 +131,8 @@ nav ul li:hover ul.dropdown {
   display: block;
 }
 
-ul li:hover ul.dropdown-btn {
-  display: block;
-  background: #fefbf2;
-}
-
 /*Responsive burgermenu*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
   nav {
     justify-content: space-between;
   }
@@ -144,13 +141,21 @@ ul li:hover ul.dropdown-btn {
     position: relative;
     max-width: 100%;
     height: 100px;
-    background-color: rgb(42, 42, 42);
+    background-color: #e0ddd4;
     align-items: center;
     margin: 0 auto;
     display: none;
     flex-direction: column;
     top: 100px;
     gap: 10px;
+  }
+
+  nav ul li ul.dropdown {
+    background: #e0ddd4;
+  }
+
+  nav ul li a:hover {
+    background: #e0ddd4;
   }
 
   .nav-links.active {
@@ -186,6 +191,12 @@ ul li:hover ul.dropdown-btn {
 }
 
 /*Section [Hero]*/
+.hero {
+  background-image: url(/assets/img/fuglebjerggaard.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .signup-btn {
   display: inline-block;
   padding: 13px 35px;
