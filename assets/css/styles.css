@@ -370,9 +370,11 @@ nav ul li:hover ul.dropdown {
 
 .netshop hr {
   position: relative;
+  width: 86%;
   bottom: 26px;
   z-index: -1;
   background-color: #353535;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
