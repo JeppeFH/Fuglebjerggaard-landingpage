@@ -370,6 +370,7 @@ nav ul li:hover ul.dropdown {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(auto auto);
   gap: 10px;
+  align-self: center;
 }
 
 .øko-mærker figure img:first-child {
@@ -410,7 +411,7 @@ nav ul li:hover ul.dropdown {
 
 .netshop hr {
   position: relative;
-  width: 86%;
+  width: 1271px;
   bottom: 26px;
   z-index: -1;
   background-color: #353535;
@@ -592,7 +593,7 @@ footer a {
   }
 
   h3 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   h4 {
@@ -611,6 +612,12 @@ footer a {
     font-size: 1.4rem;
   }
 
+  /*Info*/
+  .giftcard-btn {
+    padding: 10px 30px;
+    font-size: 1.4rem;
+  }
+
   /*Øko-mærker*/
   .øko-mærker {
     flex-direction: column;
@@ -623,6 +630,10 @@ footer a {
 
   .øko-mærker figure {
     margin: 0 auto;
+  }
+
+  .øko-mærker h2 {
+    font-size: 3.5rem;
   }
 
   /*Footer*/
@@ -657,5 +668,72 @@ footer a {
 
   .display-none {
     display: none;
+  }
+
+  .øko-mærker-container {
+    flex-direction: column;
+  }
+
+  .øko-mærker figure img:first-child {
+    grid-column: span 3;
+    grid-row: span 1;
+    object-fit: cover;
+    width: 440px;
+    height: 300px;
+  }
+
+  .øko-mærker img:nth-child(2),
+  .øko-mærker img:nth-child(3),
+  .øko-mærker img:nth-child(4) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .øko-mærker figure img:first-child {
+    grid-column: span 3;
+    grid-row: span 1;
+    object-fit: cover;
+    width: 320px;
+    height: 260px;
+  }
+
+  .øko-mærker img:nth-child(2),
+  .øko-mærker img:nth-child(3),
+  .øko-mærker img:nth-child(4) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*Netshop hr responsive*/
+@media screen and (max-width: 768px) {
+  .netshop hr {
+    width: 503px;
+  }
+}
+
+@media screen and (max-width: 1331.2px) {
+  .netshop hr {
+    width: 1013px;
+  }
+}
+
+@media screen and (max-width: 1074.4px) {
+  .netshop hr {
+    width: 763px;
+  }
+}
+
+@media screen and (max-width: 817.6px) {
+  .netshop hr {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .netshop hr {
+    width: 248px;
   }
 }
