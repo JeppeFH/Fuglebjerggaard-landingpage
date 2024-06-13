@@ -242,7 +242,7 @@ nav ul li:hover ul.dropdown {
 .socials {
   width: 100%;
   background-color: #bfa866;
-  height: 100px;
+  height: 80px;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -268,7 +268,7 @@ nav ul li:hover ul.dropdown {
 /*Section [info]*/
 .info {
   width: 100%;
-  padding: 0 20px 0 20px;
+  padding: 0 120px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -320,30 +320,70 @@ nav ul li:hover ul.dropdown {
 /*Section [øko-mærker]*/
 .øko-mærker {
   width: 100%;
+  background-color: #bfa866;
   height: auto;
-  display: flex;
-  padding: 0 20px;
-  margin: 0 auto;
-  justify-content: space-between;
+  padding: 20px 0;
   margin-bottom: 50px;
 }
 
-.øko-mærker figure {
+.øko-mærker-container {
+  width: 100%;
+  height: auto;
   display: flex;
+  padding: 0 120px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.øko-mærker figure:nth-child(2) {
-  display: flex;
+.øko-mærker h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 4.2rem;
+}
+
+.øko-mærker p:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.øko-mærker p:nth-child(4) {
+  margin-bottom: 10px;
+}
+
+.øko-mærker p:nth-child(5) {
+  margin-bottom: 10px;
+}
+
+.øko-mærker p:nth-child(6),
+.øko-mærker p:nth-child(7) {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.camilla-ptag {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.øko-mærker figure {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(auto auto);
   gap: 10px;
 }
 
-.øko-mærker img {
-  width: 100px;
-  height: 100px;
+.øko-mærker figure img:first-child {
+  grid-column: span 3;
+  grid-row: span 1;
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
 }
 
-.øko-mærker img:nth-child(1) {
-  width: 150px;
+.øko-mærker img:nth-child(2),
+.øko-mærker img:nth-child(3),
+.øko-mærker img:nth-child(4) {
+  width: 100px;
   height: 100px;
 }
 
