@@ -571,14 +571,26 @@ footer a {
   width: 69%;
   text-align: center;
   margin: 0 auto;
-  border-top: 1px solid rgb(40, 40, 40);
+  border-top: 1px solid rgba(63, 63, 63, 0.479);
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom-container p {
-  margin: 0 auto;
   padding: 10px;
   color: rgb(43, 43, 43);
   font-size: 1.3rem;
+}
+
+.footer-bottom-container a {
+  padding: 10px;
+  color: rgb(43, 43, 43);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.footer-bottom-container a:hover {
+  text-decoration: underline;
 }
 
 /*Responsive*/
@@ -638,7 +650,11 @@ footer a {
 
   /*Footer*/
   .footer-bottom-container p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom-container a {
+    font-size: 1.2rem;
   }
 
   .footer-top-container {
