@@ -14,7 +14,7 @@ body {
 
 /*Heading sizes*/
 h1 {
-  font-size: 8rem;
+  font-size: 9rem;
 }
 
 h2 {
@@ -192,7 +192,7 @@ nav ul li:hover ul.dropdown {
 
 /*Section [Hero]*/
 .hero {
-  background-image: url(/assets/img/fuglebjerggaard.png);
+  background-image: url(/assets/img/fuglebjerggaard2.png);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -201,10 +201,10 @@ nav ul li:hover ul.dropdown {
   align-content: center;
 }
 
-.giftcard-btn {
-  display: inline-block;
+.hero figure {
+  display: flex;
+  gap: 10px;
   padding: 13px 35px;
-  font-size: 1.6rem;
   border-radius: 15px;
   font-weight: 600;
   text-align: center;
@@ -213,11 +213,25 @@ nav ul li:hover ul.dropdown {
   background-color: tomato;
   cursor: pointer;
   text-align: center;
-  align-content: center;
   margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.giftcard-btn:hover {
+.hero figure i {
+  font-size: 3.5rem;
+  color: green;
+}
+
+.hero figure a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+
+.hero figure:hover {
   background-color: rgb(224, 82, 57);
   transition: all 250ms ease-in-out;
 }
@@ -225,17 +239,13 @@ nav ul li:hover ul.dropdown {
 .hero h1 {
   text-align: center;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-family: "Lobster Two", sans-serif;
   font-weight: 500;
 }
 
 .hero div {
-  background-color: rgba(0, 0, 0, 0.486);
-  border-radius: 5px;
   margin: 0 auto;
-  width: fit-content;
-  padding: 20px 80px;
 }
 
 /*Section [Socials]*/
@@ -313,7 +323,28 @@ nav ul li:hover ul.dropdown {
   color: white;
 }
 
-.info .giftcard-btn {
+.btn {
+  display: inline-block;
+  padding: 13px 35px;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(224, 82, 57);
+  transition: all 250ms ease-in-out;
+}
+
+.info .btn {
   margin-top: 10px;
 }
 
